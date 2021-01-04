@@ -1,0 +1,138 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#EDF0F5;
+    color:#A1A2A4;
+}
+
+.container{
+    margin:0px 10%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.cards{
+    display:flex;
+    justify-content: space-between;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    background-color:white;
+    width:280px;
+    height:500px;   
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:30px 20px 10px 20px;
+    border-radius:5px;
+    margin-top:30px;
+}
+
+.card img{
+    border-radius:100px;
+}
+
+h3{
+    color:black;
+}
+
+.address{
+    font-size:14px;
+}
+
+.address .fa-map-marker-alt{
+    margin-right:5px;
+}
+
+.description{
+    padding:0px 20px 0px 20px;
+    line-height:30px;
+}
+
+
+.btn{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    background-color:white;
+    margin-top:20px;
+    color:#A1A2A4;
+}
+
+.card ul{
+    display:flex;
+    flex-direction:row;
+    margin-right:42px;
+    margin-top:45px;
+}
+
+.card ul li{
+    list-style:none;
+    padding:8px;
+}
+
+.card ul li a{
+    color:#A1A2A4;
+    border:1px solid #A1A2A4;
+    padding:7px;
+    font-size:16px;
+    border-radius:100px;
+}
+
+.card ul li a .fab{
+    width:18px;
+}
+
+@media only screen /*Tablet*/
+and (min-device-width : 768px)
+and (max-device-width : 1057px) {
+    .cards{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .card{
+       width:370px;
+    
+    padding:30px 0px 10px 0px;
+    }
+}
+
+@media only screen /*Phone*/
+    and (max-device-width : 375px) {
+        header{
+            font-size:35px;
+        }
+        .cards{
+            display:flex;
+            justify-content:start;
+          
+        }
+        .card{
+            
+            width:1000px;
+        height:900px; 
+        }
+        .card p,h3, button{
+            font-size:35px;
+        }
+        .card, h3{
+            font-size:45px;
+        }
+        .card ul li a{
+            font-size:35px;
+            padding:30px 40px;
+        }
+        .card img{
+            width:250px;
+            height:250px;
+            border-radius:200px;
+        }
+}
+
+

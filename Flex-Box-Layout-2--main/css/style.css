@@ -1,0 +1,126 @@
+body{
+    margin:0 22%;
+    padding:0;
+    background-color:#FAFAFA;
+    color:#4D4F5E;
+  
+}
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    margin-top:70px;
+    align-items:center;
+
+}
+
+.text-field p{
+    color:#B3B3B5;
+}
+
+.text-field{
+    line-height:19px;
+    text-align:center;
+ 
+   margin:0;
+   padding:0;
+}
+
+
+header{
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+.card{
+    width:338px;
+    height:260px;
+    background-color:white;
+    margin-top:50px;  
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.32);
+}
+
+.card-one{
+    border-top:#45D3D3 solid 5px;
+    border-radius:5px;
+}
+
+.card-two{
+    border-top:#EA5353 solid 5px;
+    border-radius:5px;
+}
+
+.card-three{
+    border-top:#FCAF4A solid 5px;
+    border-radius:5px;
+}
+
+.card-four{
+    border-top:#549EF2 solid 5px;
+    border-radius:5px;
+}
+
+
+.card p, h1{
+    padding:0px 35px 0px 35px;
+}
+
+
+
+
+
+.card img{
+    float:right;
+    padding:35px 25px 0px 0px;
+}
+
+
+@media only screen /*Tablet*/
+and (min-width : 484px)
+and (max-width : 1057px) {
+   .cards{
+       display:flex;
+       flex-direction:column;
+   }
+   .wrap{
+    display:flex;
+    flex-direction:row;
+    column-gap: 40px;
+}
+    .wrap .card{
+        width:300px;
+    }
+
+    
+}
+
+@media only screen /*Phone*/
+    and (max-width : 484px) {
+        body{
+            margin:0 12%;
+        }
+        .cards{
+            display:flex;
+            flex-direction:column;
+            margin-top:0px;
+        }
+        .text-field{
+            line-height:14px;
+            font-size:11px;
+            text-align:center;
+            width:100%;
+            margin-top:30px;
+        }
+        .text-field p{
+            margin-top:20px;
+            font-size:15px;
+        }
+        
+}
+
+
+
